@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
+    <!-- https://www.flaticon.com/free-icon/hamburger_7710488?term=buttons&page=1&position=92&origin=search&related_id=7710488 -->
+
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "300px";
+          document.getElementById("bg_content").style.marginLeft = "250px";
+          document.getElementById("content").style.marginLeft = "0px";
+          document.getElementById("brain").style.marginLeft = "800px";
+        //   document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("bg_content").style.marginLeft= "0";
+          document.getElementById("content").style.marginLeft = "50px";
+          document.getElementById("brain").style.marginLeft = "850px";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
+
+
+</head>
+<body background="images\AlMatrix.png">
+
+    <!-- sidebar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About Alzeihmer's</a>
+        <a href="#">Awareness & Survey</a>
+        <a href="#">Genetics</a>
+        <a href="#">Proteins & Networks</a>
+        <a href="#">Pathways</a>
+        <a href="#">Drugs & Treatments</a>
+        <a href="#">Caregiver Guide</a>
+        <a href="#">Support & Helplines</a>
+      </div>
+
+
+
+
+    <!-- BEGIN: Sticky Header -->
+    <div id="header_container">
+        <div id="header">
+            AlzMatrix
+        </div>
+    </div>
+    <!-- END: Sticky Header -->
+    <!-- BEGIN: Page Content -->
+    <div id="container">
+
+        <div id="bg_content">
+            <div id="content">
+                <div  id="title">Welcome to </div><div id="title_big">AlzMatrix</div>
+                <div id="title2">Simplifying Alzeihmer's Science for All</div>
+                <br /><br />
+                <!-- <div>Alzheimer’s Disease (AD) remains one of the biggest challenges in neuroscience, with no definitive cure and limited treatment options. ALZMATRIX is designed to be an accessible and structured database that compiles key insights from multi-omics studies, helping researchers, students, and the general public explore the molecular landscape
+                    </div> -->
+                <div id="button"><button id="button_content" onclick="openNav()">Click for more Info</button></div>
+            </div>
+
+            <div id="brain">
+                <img id="brain_image" src="images/brain 1_2.png" alt="brain">
+            </div>
+        </div>
+    </div>
+    <!-- END: Page Content -->
+    <!-- BEGIN: Sticky Footer -->
+    <div id="footer_container">
+        <div id="footer">
+            Footer Content
+        </div>
+    </div>
+    <!-- END: Sticky Footer -->
+    </body>
+</html>
