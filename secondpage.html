@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="secondpage.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+</head>
+<body class="sb-expanded" background="images/AlzMatrix2.png"> 
+
+    <div id="header_container">
+        <div id="header">
+            AlzMatrix
+        </div>
+    </div>
+
+    <!-- <div id="wrapper">
+        <div id="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>About Alzeihmer's</li>
+                <li>Awareness & Survey</li>
+                <li>Genetics</li>
+                <li>Proteins & Networks</li>
+                <li>Pathways</li>
+                <li>Drugs & Treatments</li>
+                <li>Caregiver Guide</li>
+                <li>Support & Helplines</li>
+            </ul>
+
+        </div>
+
+        <div id="main">
+            <p>this is main content</p>
+        </div>
+    </div> -->
+
+
+    <aside id="sidebar">
+        
+        
+        <nav id="list_nav">
+            <ul id="ul_list">
+                <li>
+                    <a href="" data-resize-btn id="button"><i class="bx bx-chevrons-right" id="button"></i></a>
+                </li>
+                <li>
+                    <a id="list_item" href="index.html"><span>Home</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href="#about_ad"><span>About Alzeihmer's</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href="#aware"><span>Awareness & Survey</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href="#genes"><span>Genetics</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href=""><span>Proteins & Networks</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href=""><span>Pathways</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href=""><span>Drugs & Treatments</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href=""><span>Caregiver Guide</span></a>
+                </li>
+                <li>
+                    <a id="list_item" href=""><span>Support & Helplines</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="index">
+            <h4>INDEX</h4>
+        </div>
+
+    </aside>
+
+    <main id="main">
+        <h1 id="title">AlzMatrix</h1>
+
+        <hr>
+        <br>
+
+        <div id="about_ad">
+            <h2>About Alzheimer's</h2>
+            <h3>Understanding the disease</h3>
+            <p>Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder that primarily affects memory, thinking, and behavior. It is the most common cause of dementia, impacting millions worldwide.
+            </p>
+            <h3>What happens in AD</h3>
+            <p>Accumulation of beta-amyloid plaques and tau tangles in the brain.
+                Loss of neuronal connections and brain cell death.
+                Gradual decline in cognitive functions, leading to memory loss and confusion.
+                </p>
+            <h3>Why does it matter?</h3>
+            <p>No cure currently exists, and treatments only manage symptoms.
+                Early detection can help slow disease progression and improve quality of life.</p>
+        
+        </div>
+
+        <hr>
+
+        <div id="aware">
+            <h2>Awareness & Survey</h2>
+        </div>
+
+        <hr>
+
+        <div id="genes">
+            <h2>Genetics</h2>
+        </div>
+
+        <hr>
+
+        <div id="proteins">
+            <h2>Proteins & Networks</h2>
+        </div>
+
+        <hr>
+
+        <div id="pathways">
+            <h2>Pathways</h2>
+        </div>
+
+        <hr>
+
+        <div id="drugs">
+            <h2>Drugs & Treatments</h2>
+        </div>
+
+        <hr>
+
+        <div id="guide">
+            <h2>Caregiver Guide</h2>
+        </div>
+
+        <hr>
+
+        <div id="support">
+            <h2>Support & Helplines</h2>
+        </div>
+
+    </main>
+
+
+    <!-- <div id="footer_container">
+        <div id="footer">
+            Footer Content
+        </div>
+    </div> -->
+
+
+
+    <script>
+        const resizeBtn = document.querySelector('[data-resize-btn]');
+
+        resizeBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            document.body.classList.toggle('sb-expanded');
+        });
+
+    </script>
+    
+</body>
+</html>

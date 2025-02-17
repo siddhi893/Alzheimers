@@ -1,0 +1,162 @@
+body {
+    margin:0;
+    padding:0;
+    transition: background-color 0.5s;
+    --sb-width: 3rem;
+}
+
+
+body.sb-expanded{
+    --sb-width: 300px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+#header_container {
+    background:#213555;
+    border:1px solid #666;
+    height:50px;
+    left:0;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+#header {
+    line-height:50px;
+    margin:0 auto;
+    width:940px;
+    text-align:center;
+    color: white;
+    padding-left: 0;
+    font-size: 20px;
+}
+
+
+/* sidebar */
+
+
+#sidebar{
+    background-color: #f5efe7;
+    position: fixed;
+    /* top: 50px;
+    left: 0;
+    bottom: 30px; */
+    inset: 50px auto 0 0;
+    /* width: 50px; */
+    width: var(--sb-width)
+}
+
+#button{
+    color: #616060;
+    scale: 1.5;
+    
+    /* padding-left: 30px; */
+}
+
+#button.hover{
+    color: black;
+}
+
+
+#list_nav, #ul_list{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#ul_list{
+    padding-left: 0;
+}
+
+#list_item, #list_nav {
+    display: flex;
+    font-family: 'Alice';
+    line-height: 1;
+    color: #676767;
+    text-decoration: none;
+    font-size: 23px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+a.hover{
+    color: black;
+}
+
+span, #list_item, #list_nav {
+    opacity: 0;
+    visibility: hidden;
+    /* transition: opacity 0.1s ease-in, visibility 0.1s ease-in */
+}
+
+.sb-expanded span, #list_item, #list_nav {
+    opacity: 1;
+    visibility: visible
+}
+
+#index {
+    opacity: 1;
+    visibility: visible;
+    text-orientation: mixed;
+}
+
+.sb-expanded #index{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.sb-expanded #sidebar .bx-chevrons-right{
+    rotate: 180deg
+}
+
+/* main content */
+
+#main{
+    padding-top: 50px;
+    padding-left: 3rem;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+
+hr{
+    margin-right: 45px;
+}
+
+@media(min-width:768px){
+    main{
+        margin-left: var(--sb-width);
+    }
+}
+
+
+
+/* Make Footer Sticky */
+#footer_container {
+    background:#213555;
+    border:1px solid #666;
+    bottom:0;
+    height:30px;
+    left:0;
+    position:fixed;
+    width:100%;
+}
+
+#footer {
+    line-height:30px;
+    margin:0 auto;
+    width:940px;
+    text-align:center;
+    color: white
+}
