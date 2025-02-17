@@ -1,0 +1,174 @@
+body {
+    margin:0;
+    padding:0;
+    transition: background-color 0.5s;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+/* sidebar css */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f5efe7;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #676767;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 35px;
+}
+
+.sidenav a:hover {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Make Header Sticky */
+#header_container {
+    background:#213555;
+    border:1px solid #666;
+    height:50px;
+    left:0;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+#header {
+    line-height:50px;
+    margin:0 auto;
+    width:940px;
+    text-align:center;
+    color: white;
+    padding-left: 0;
+    font-family: 'Alice';
+}
+
+/* bg_cotnet */
+
+#bg_content{
+    transition: margin-left .5s;
+    background-image: url("images\AlMatrix.png");
+}
+/* titlw */
+
+#title{
+    font-family: 'Anton';font-size: 50px;
+    color: #6d6a64;
+    padding-left: 140px;
+}
+
+#title_big{
+    font-family: 'Anton';font-size: 100px;
+    color: #9051bb;
+    padding-left: 300px;
+}
+
+
+#title2{
+    font-family: 'Alice';font-size: 22px;
+    color: black;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+#content {
+    padding: 30px;
+    /* background-color: red; */
+    float: left;
+    width: 800px;
+    margin-left: 50px;
+    margin-top: 120px;
+    transition: 0.3s;
+}
+
+#button_content{
+    color: white;
+    background-color: #213555;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-family: 'Anton';font-size: 20px;
+}
+
+#button{
+    padding-left: 300px;
+}
+
+
+
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#container {
+    margin:0 auto;
+    overflow:auto;
+    padding:30px 0;
+    /* width: 100%; */
+    display: flex;
+}
+
+
+#brain{
+    /* background-color: blue; */
+    margin-left: 850px;  
+    padding-top: 150px;  
+    transition: 0.3s;
+}
+
+#brain_image{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    filter: drop-shadow(50px 50px 50px rgba(0,0,0, 0.5))
+}
+
+
+
+/* Make Footer Sticky */
+#footer_container {
+    background:#213555;
+    border:1px solid #666;
+    bottom:0;
+    height:30px;
+    left:0;
+    position:fixed;
+    width:100%;
+}
+
+#footer {
+    line-height:30px;
+    margin:0 auto;
+    width:940px;
+    text-align:center;
+    color: white;
+    font-family: 'Alice';
+}
