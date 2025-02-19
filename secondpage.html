@@ -48,31 +48,31 @@
                     <a href="" data-resize-btn id="button"><i class="bx bx-chevrons-right" id="button"></i></a>
                 </li>
                 <li>
-                    <a id="list_item" href="index.html"><span>Home</span></a>
+                    <a id="list_item" href="index.html"><span id="list_span">Home</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href="#about_ad"><span>About Alzeihmer's</span></a>
+                    <a id="list_item" href="#about_ad"><span id="list_span">About Alzeihmer's</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href="#aware"><span>Awareness & Survey</span></a>
+                    <a id="list_item" href="#aware"><span id="list_span">Awareness & Survey</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href="#genes"><span>Genetics</span></a>
+                    <a id="list_item" href="#genes"><span id="list_span">Genetics</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span>Proteins & Networks</span></a>
+                    <a id="list_item" href=""><span id="list_span">Proteins & Networks</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span>Pathways</span></a>
+                    <a id="list_item" href=""><span id="list_span">Pathways</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span>Drugs & Treatments</span></a>
+                    <a id="list_item" href=""><span id="list_span">Drugs & Treatments</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span>Caregiver Guide</span></a>
+                    <a id="list_item" href=""><span id="list_span">Caregiver Guide</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span>Support & Helplines</span></a>
+                    <a id="list_item" href=""><span id="list_span">Support & Helplines</span></a>
                 </li>
             </ul>
         </nav>
@@ -109,46 +109,112 @@
 
         <div id="aware">
             <h2>Awareness & Survey</h2>
+            <h3>Survey insights and the need for awareness</h3>
+            <a href="">Click for more information on the survey</a>
+            <h3>pie chart title</h3>
+
+            <table id="pie_table">
+                <td><div id="piechart"></div></td>
+                <td><div id="pie_index">
+                    <ul>
+                        <li>Topic1 : 10% <span id="topic" style="background-color: pink;"></span></li>
+                        <li>Topic2 : 50% <span id="topic" style="background-color: lightblue;"></span></li>
+                        <li>Topic1 : 40% <span id="topic" style="background-color: orange;"></span></li>
+                    </ul>
+                </div></td>
+            </table>
+            
         </div>
 
         <hr>
 
         <div id="genes">
             <h2>Genetics</h2>
+            <h3>Key genes associated with AD</h3>
+            <table id="genetics_table" style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black;">Sr. No.</th>
+                    <th style="border: 1px solid black;">Gene Name</th>
+                    <th style="border: 1px solid black;">Link to Source</th>
+                </tr>
+
+                <tr>
+                    <td style="border: 1px solid black;">1</td>
+                    <td style="border: 1px solid black;">Gene 1</td>
+                    <td style="border: 1px solid black;"><a href="">Link 1</a></td>
+                </tr>
+                
+            </table>
         </div>
 
         <hr>
 
         <div id="proteins">
             <h2>Proteins & Networks</h2>
+            <h3>PPI networks and involved proteins</h3>
+            <table id="genetics_table" style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black;">Sr. No.</th>
+                    <th style="border: 1px solid black;">Protein Name</th>
+                    <th style="border: 1px solid black;">Link to Source</th>
+                </tr>
+
+                <tr>
+                    <td style="border: 1px solid black;">1</td>
+                    <td style="border: 1px solid black;">Protein 1</td>
+                    <td style="border: 1px solid black;"><a href="">Link 1</a></td>
+                </tr> 
+            </table>
+
+            <img id="ppi_network" src="images/sample image.jpg" alt="">
         </div>
 
         <hr>
 
         <div id="pathways">
             <h2>Pathways</h2>
+            <img id="pathway_img" src="images/sample image.jpg">
         </div>
 
         <hr>
 
         <div id="drugs">
             <h2>Drugs & Treatments</h2>
+            <h3> FDA-approved & traditional treatments</h3>
+            <ol>
+                <li><a href="#">drug 1</a></li>
+                <li><a href="#">drug 2</a></li>
+            </ol>
         </div>
 
         <hr>
 
         <div id="guide">
             <h2>Caregiver Guide</h2>
+            <h3>Essential caregiving tips and resources </h3>
+            <ul>
+                <li>Step 1:</li>
+                <li>Step 2:</li>
+            </ul>
         </div>
 
         <hr>
 
         <div id="support">
             <h2>Support & Helplines</h2>
+            <h3> Care centers and emergency contacts </h3>
+            
+            <ul>
+                <li><a href="#">center 1</a></li>
+                <li><a href="#">center 2</a></li>
+            </ul>
         </div>
 
     </main>
 
+    <div id="footer">
+        End
+    </div>
 
     <!-- <div id="footer_container">
         <div id="footer">

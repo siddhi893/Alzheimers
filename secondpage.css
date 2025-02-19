@@ -88,13 +88,13 @@ a.hover{
     color: black;
 }
 
-span, #list_item, #list_nav {
+#list_span, #list_item, #list_nav {
     opacity: 0;
     visibility: hidden;
     /* transition: opacity 0.1s ease-in, visibility 0.1s ease-in */
 }
 
-.sb-expanded span, #list_item, #list_nav {
+.sb-expanded #list_span, #list_item, #list_nav {
     opacity: 1;
     visibility: visible
 }
@@ -141,6 +141,45 @@ hr{
 }
 
 
+#pie_table{
+    border-color: none;
+}
+
+
+#piechart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        pink 70deg,
+        lightblue 0 235deg,
+        orange 0
+    );
+}
+
+
+#topic {
+    width: 30px;
+    height: 10px;
+    display: inline-block;
+}
+
+
+/* #genetics_table{
+    border: black;
+} */
+
+
+#ppi_network{
+    width: 300px;
+    height:300px;
+}
+
+#pathway_img{
+    width: 300px;
+    height:300px;
+}
+
 
 /* Make Footer Sticky */
 #footer_container {
@@ -158,5 +197,5 @@ hr{
     margin:0 auto;
     width:940px;
     text-align:center;
-    color: white
+    color: black
 }
