@@ -60,19 +60,19 @@
                     <a id="list_item" href="#genes"><span id="list_span">Genetics</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span id="list_span">Proteins & Networks</span></a>
+                    <a id="list_item" href="#proteins"><span id="list_span">Proteins & Networks</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span id="list_span">Pathways</span></a>
+                    <a id="list_item" href="#pathways"><span id="list_span">Pathways</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span id="list_span">Drugs & Treatments</span></a>
+                    <a id="list_item" href="#drugs"><span id="list_span">Drugs & Treatments</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span id="list_span">Caregiver Guide</span></a>
+                    <a id="list_item" href="#guide"><span id="list_span">Caregiver Guide</span></a>
                 </li>
                 <li>
-                    <a id="list_item" href=""><span id="list_span">Support & Helplines</span></a>
+                    <a id="list_item" href="#support"><span id="list_span">Support & Helplines</span></a>
                 </li>
             </ul>
         </nav>
@@ -90,40 +90,114 @@
         <br>
 
         <div id="about_ad">
-            <h2>About Alzheimer's</h2>
-            <h3>Understanding the disease</h3>
-            <p>Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder that primarily affects memory, thinking, and behavior. It is the most common cause of dementia, impacting millions worldwide.
+            <h2 id="about_ad_h2">About Alzheimer's</h2>
+            <select id="selectBox" onchange="changeFunc();">
+                <option value="eng">English</option>
+                <option value="mar">Marathi</option>
+                <option value="hin">Hindi</option>
+              </select>
+            <h3 id="about_ad_h3_1">Understanding the disease</h3>
+            <p id="about_ad_p1">Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder that primarily affects memory, thinking, and behavior. It is the most common cause of dementia, impacting millions worldwide.
             </p>
-            <h3>What happens in AD</h3>
-            <p>Accumulation of beta-amyloid plaques and tau tangles in the brain.
+            <h3 id="about_ad_h3_2">What happens in AD</h3>
+            <p id="about_ad_p2">Accumulation of beta-amyloid plaques and tau tangles in the brain.
                 Loss of neuronal connections and brain cell death.
                 Gradual decline in cognitive functions, leading to memory loss and confusion.
                 </p>
-            <h3>Why does it matter?</h3>
-            <p>No cure currently exists, and treatments only manage symptoms.
+            <h3 id="about_ad_h3_3">Why does it matter?</h3>
+            <p id="about_ad_p3">No cure currently exists, and treatments only manage symptoms.
                 Early detection can help slow disease progression and improve quality of life.</p>
+
+            <img id="about_img" src="images/about_eng.jpg" alt="">
         
         </div>
 
         <hr>
 
         <div id="aware">
-            <h2>Awareness & Survey</h2>
-            <h3>Survey insights and the need for awareness</h3>
-            <a href="">Click for more information on the survey</a>
-            <h3>pie chart title</h3>
+            <h2 id="aware_h2">Awareness & Survey</h2>
+            <select id="selectBox2" onchange="changeFunc2();">
+                <option value="eng">English</option>
+                <option value="mar">Marathi</option>
+                <option value="hin">Hindi</option>
+              </select>
+            <h3 id="aware_h3_1">Survey insights and the need for awareness</h3>
+            <a id="survey_form" href="https://docs.google.com/forms/d/e/1FAIpQLSf1Qo3veVBKrddcrHKCTvaTiHQCVi0uPwscwUhgrA3FA7Ocig/viewform?usp=header">Fill Survey Form</a>
+            <h3 id="aware_h3_2">Survey Evaluation</h3>
 
             <table id="pie_table">
                 <td><div id="piechart"></div></td>
                 <td><div id="pie_index">
                     <ul>
-                        <li>Topic1 : 10% <span id="topic" style="background-color: pink;"></span></li>
-                        <li>Topic2 : 50% <span id="topic" style="background-color: lightblue;"></span></li>
-                        <li>Topic1 : 40% <span id="topic" style="background-color: orange;"></span></li>
-                    </ul>
+                        <li id="aware_li1">Good 154/205 : 24.9% <span id="topic" style="background-color: rgb(93, 0, 103);"></span></li>
+                        <li id="aware_li2">Poor 51/205 : 75.1% <span id="topic" style="background-color: rgb(204, 0, 245);"></span></li>                    </ul>
                 </div></td>
             </table>
-            
+
+            <img src="images/barchart.jpg" alt="">
+
+            <br>
+
+            <iframe id="excel" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ74wCC07UPTKp6LDgj2RJAR5zOXy7xBnPYxe-usBwbx4OoOt7iPDifdPAORWttrsbyppCI_W58D0nC/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+            <p>The survey assessed public awareness and misconceptions about Alzheimer's disease. The results indicate <b>widespread misconceptions</b> regarding the disease's causes, symptoms, and management.</p>
+            <ul>
+                <li>Basic Understanding:
+                    <ul>
+                        <li>42% correctly identified that Alzheimer's is a type of dementia with no cure, while 58% were incorrect.</li>
+                        <li>Only 37% knew that people in their 30s can have Alzheimer's.</li>
+                        <li>24.4% falsely believed Alzheimer's could result from black magic or a bad eye.</li>
+                    </ul>
+                </li>
+
+                <li>Risk Factors & Prevention:
+                    <ul>
+                        <li>73% were unaware that high blood pressure or cholesterol increases Alzheimer’s risk.
+                        </li>
+                        <li>Only 12% knew that mental exercise does not fully prevent Alzheimer's.
+                        </li>
+                        <li>46% recognized that poor nutrition can worsen symptoms.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Symptoms & Diagnosis:
+                    <ul>
+                        <li>63% did not know trouble handling money could be an early symptom.
+                        </li>
+                        <li>75% mistakenly believed sudden confusion is likely due to Alzheimer's.
+                        </li>
+                        <li>72% falsely thought people with Alzheimer's remember recent events better than older ones.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Treatment & Care:
+                    <ul>
+                        <li> 8.7% falsely believe that prescription drugs can slow disease progression.
+                        </li>
+                        <li>
+                            47.8% understood that people with Alzheimer's eventually need 24-hour supervision.
+                        </li>
+                        <li>44% agreed that psychotherapy can help in early stages.
+                        </li>
+                        <li>83% incorrectly believed reminding patients about repetition is helpful.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Social Perceptions:
+                    <ul>
+                        <li>
+                            Some survey questions on social attitudes (e.g., care in state-run nursing homes, embarrassment, and social participation) were left unanswered, possibly indicating hesitation in discussing societal stigma.
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>The survey highlights significant misconceptions about Alzheimer's disease, particularly regarding risk factors, symptoms, and treatment. Educational efforts are needed to correct these misunderstandings and promote better awareness and early detection.
+            </p>
         </div>
 
         <hr>
@@ -173,18 +247,65 @@
 
         <div id="pathways">
             <h2>Pathways</h2>
-            <img id="pathway_img" src="images/sample image.jpg">
+            <img id="pathway_img" src="images/pathway.jpg"><br>
+            <a href="https://www.kegg.jp/entry/H00056">Alzheimer's Disease Pathway using KEGG</a>
         </div>
 
         <hr>
 
         <div id="drugs">
             <h2>Drugs & Treatments</h2>
-            <h3> FDA-approved & traditional treatments</h3>
+            <h3>Here is a list of FDA-approved drugs for the treatment of Alzheimer's disease:
+            </h3>
+            <p>For Mild to Moderate Alzheimer's Disease
+            </p>
             <ol>
-                <li><a href="#">drug 1</a></li>
-                <li><a href="#">drug 2</a></li>
+                <li><a href="#">Cholinesterase Inhibitors:</a>
+                <ul>
+                    <li>Donepezil: Prevents the breakdown of acetylcholine. Can treat mild, moderate, and severe Alzheimer's.</li>
+                    <li>Galantamine: Reduces the breakdown of acetylcholine and stimulates released acetylcholine.</li>
+                    <li>Rivastigmine: Prevents the breakdown of acetylcholine and butyrylcholine.</li>
+                </ul></li>
+                <li><a href="#">Combination Medications:</a>
+                <ul>
+                    <li>Memantine and Donepezil: Combines the NMDA antagonist memantine, which regulates glutamate, with donepezil.
+                    </li>
+                </ul></li>
             </ol>
+
+            <p>For Moderate to Severe Alzheimer's Disease
+            </p>
+
+            <ol>
+                <li>Memantine: An NMDA antagonist that helps regulate glutamate levels to prevent brain cell death.
+                </li>
+                <li>Rivastigmine Patch: A patch version of rivastigmine suitable for those who prefer not to take oral medications.
+                </li>
+                <li>Donepezil (also for moderate to severe).
+                </li>
+            </ol>
+
+            <p>Immunotherapy for Early Alzheimer's Disease
+            </p>
+
+            <ol>
+                <li> Lecanemab: Targets beta-amyloid plaques to reduce cognitive decline in early Alzheimer's.
+                </li>
+                <li>Donanemab: Similar to lecanemab, it targets beta-amyloid to help reduce plaques.
+                </li>
+            </ol>
+
+            <p>Additional Treatments
+            </p>
+            <ul><li>Brexpiprazole: An atypical antipsychotic used to treat agitation associated with Alzheimer's.
+            </li></ul>
+
+            <p>
+                These medications can help manage cognitive and behavioral symptoms, slowing disease progression and maintaining function for longer periods.
+            </p>
+
+            <img id="drug_img" src="images/drugs.jpg" alt=""><br>
+            <a href="https://www.nia.nih.gov/health/alzheimers-treatment/how-alzheimers-disease-treated#:~:text=Lecanemab%20and%20donanemab%20are%20FDA,hallmark%20brain%20changes%20in%20Alzheimer's.">References</a>
         </div>
 
         <hr>
@@ -231,6 +352,93 @@
             e.preventDefault();
             document.body.classList.toggle('sb-expanded');
         });
+
+
+        function changeFunc() {
+            var selectBox = document.getElementById("selectBox");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            var url = document.querySelector("#about_img");
+
+            if(selectedValue=="eng"){
+                document.getElementById("about_ad_h2").textContent="About Alzheimer's";
+                document.getElementById("about_ad_h3_1").textContent="Understanding the disease";
+                document.getElementById("about_ad_p1").textContent="Alzheimer’s Disease (AD) is a progressive neurodegenerative disorder that primarily affects memory, thinking, and behavior. It is the most common cause of dementia, impacting millions worldwide.";
+                document.getElementById("about_ad_h3_2").textContent="What happens in AD";
+                document.getElementById("about_ad_p2").textContent="Accumulation of beta-amyloid plaques and tau tangles in the brain. Loss of neuronal connections and brain cell death. Gradual decline in cognitive functions, leading to memory loss and confusion.";
+                document.getElementById("about_ad_h3_3").textContent="Why does it matter?";
+                document.getElementById("about_ad_p3").textContent="No cure currently exists, and treatments only manage symptoms. Early detection can help slow disease progression and improve quality of life.";
+                url.src = 'images/about_eng.jpg';
+            }
+            else if(selectedValue=="mar"){
+                document.getElementById("about_ad_h2").textContent="next hi";
+                document.getElementById("about_ad_h3_1").textContent="next hi";
+                document.getElementById("about_ad_p1").textContent="next hi";
+                document.getElementById("about_ad_h3_2").textContent="next hi";
+                document.getElementById("about_ad_p2").textContent="next hi";
+                document.getElementById("about_ad_h3_3").textContent="next hi";
+                document.getElementById("about_ad_p3").textContent="next hi";
+                url.src = 'images/about_mar.jpg';
+            }
+            else{
+                document.getElementById("about_ad_h2").textContent="next hi";
+                document.getElementById("about_ad_h3_1").textContent="next hi";
+                document.getElementById("about_ad_p1").textContent="next hi";
+                document.getElementById("about_ad_h3_2").textContent="next hi";
+                document.getElementById("about_ad_p2").textContent="next hi";
+                document.getElementById("about_ad_h3_3").textContent="next hi";
+                document.getElementById("about_ad_p3").textContent="next hi";
+                url.src = 'images/about_hin.jpg';
+            }
+        }
+
+
+        function changeFunc2() {
+            var selectBox = document.getElementById("selectBox2");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            var url = document.querySelector("#survey_form");
+        
+
+            if(selectedValue=='eng'){
+                // location.reload(true);
+                document.getElementById("aware_h2").textContent="Awareness & Survey";
+                document.getElementById("aware_h3_1").textContent="Survey insights and the need for awareness";
+                document.getElementById("aware_h3_2").textContent="Survey Evaluation";
+                document.getElementById("survey_form").textContent="Fill Survey Form";
+                document.getElementById("aware_li1").textContent="Good 154/205 : 24.9% ";
+                document.getElementById("aware_li2").textContent="Poor 51/205 : 75.1% ";
+                url.href = 'https://docs.google.com/forms/d/e/1FAIpQLSf1Qo3veVBKrddcrHKCTvaTiHQCVi0uPwscwUhgrA3FA7Ocig/viewform?usp=header';
+            }
+            else if(selectedValue=='mar'){
+                // location.reload(true);
+                document.getElementById("aware_h2").textContent="About Alzheimer's";
+                document.getElementById("aware_h3_1").textContent="About Alzheimer's";
+                document.getElementById("aware_h3_2").textContent="About Alzheimer's";
+                document.getElementById("survey_form").textContent="About Alzheimer's";
+                document.getElementById("aware_li1").textContent="About Alzheimer's";
+                document.getElementById("aware_li2").textContent="About Alzheimer's";
+                url.href = 'https://forms.gle/khr19edXPZjVWbcC7';
+            }
+            else{
+                // location.reload(true);
+                document.getElementById("aware_h2").textContent="About Alzheimer's";
+                document.getElementById("aware_h3_1").textContent="About Alzheimer's";
+                document.getElementById("aware_h3_2").textContent="About Alzheimer's";
+                document.getElementById("survey_form").textContent="About Alzheimer's";
+                document.getElementById("aware_li1").textContent="About Alzheimer's";
+                document.getElementById("aware_li2").textContent="About Alzheimer's";
+                url.href = 'https://forms.gle/2JLQSTdB5ezyD6o38';
+            }
+        }
+
+
+    //     document.getElementById("selectBox2").onclick = function() {
+    //     var link = document.getElementById("survey_form");
+    //     link.setAttribute("href", "https://forms.gle/khr19edXPZjVWbcC7");
+    //     return false;
+    // }
+
+        
+
 
     </script>
     

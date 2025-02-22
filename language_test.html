@@ -1,0 +1,28 @@
+<html>
+<body>
+   <h3 id="center">Example for changing href attribute value after clicking the button</h3>
+   <div id="myDiv">
+      <a id="xy" href="https://www.tutorix.com">Welcome to Tutorix Site</a>
+      <br><br>
+      <button onclick="sampleFunction()">
+         click here
+      </button>
+      <button onclick="sampleFunction2()">
+        dont cl
+
+      </button>
+   </div>
+   <script>
+      function sampleFunction() {
+         var url = document.querySelector("#xy");
+         url.href = 'https://www.tutorialspoint.com';
+         url.textContent = "Hello, Welcome to Tutorialspoint";
+      }
+      function sampleFunction2() {
+         var url = document.querySelector("#xy");
+         url.href = 'https://www.tutorix.com';
+         url.textContent = "Welcome to Tutorix Site";
+      }
+   </script>
+</body>
+</html>
