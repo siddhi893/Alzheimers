@@ -108,19 +108,19 @@ body.sb-expanded{
     text-decoration: underline;
   } */
 
-#center2, #center1, #references, #inhibitors2, #inhibitors1, #pathway_kegg, #protein_interaction, #survey_form:link{
+#center2, #center1, #references, #inhibitors2, #inhibitors1, #pathway_kegg, #protein_interaction,#tip_1, #tip_2, #survey_form:link{
     color: black;
     background-color: rgb(237, 237, 237);
     text-decoration: underline;
 }
 
-#center2, #center1, #references, #inhibitors2, #inhibitors1, #pathway_kegg, #protein_interaction, #survey_form:hover{
+#center2, #center1, #references, #inhibitors2, #inhibitors1, #pathway_kegg, #protein_interaction, #tip_1, #tip_2,#survey_form:hover{
     color: black;
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(225, 175, 254);
     text-decoration: underline;
 }
 
-#center2, #center1, #references, #inhibitors2, #inhibitors1, #pathway_kegg, #protein_interaction, #survey_form:visited{
+#center2, #center1, #references, #inhibitors2, #inhibitors1, #pathway_kegg, #protein_interaction, #tip_1, #tip_2,#survey_form:visited{
     color: black;
     background-color: rgb(237, 237, 237);
     text-decoration: underline;
