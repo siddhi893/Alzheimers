@@ -219,7 +219,8 @@ hr{
 
 
 /* #genetics_table{
-    border: black;
+    margin: auto;
+    display: block;
 } */
 
 
