@@ -171,11 +171,13 @@ h1{
 
 h2{
     font-size: 30px;
+    padding-top: 60px;
 }
 
 
 
 hr{
+    margin-bottom: 30px;
     margin-right: 45px;
 }
 
